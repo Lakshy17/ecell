@@ -12,6 +12,12 @@ function Navbar() {
         if (ele) {
             ele.scrollIntoView({behavior:"smooth"})
         }}
+
+    const Events = () => {
+        const ele = document.getElementById("Events");
+        if (ele) {
+            ele.scrollIntoView({behavior:"smooth"})
+        }}
     return (
         <>
 
@@ -25,7 +31,7 @@ function Navbar() {
                 <div className="flex flex-row items-center gap-10" >
                     <p><button onClick={Home}> Home </button></p>
                     <p>|</p>
-                    <p><a href='#'> Events </a></p>
+                    <p><button onClick={Events}> Events </button></p>
                     <p>|</p>
                     <p><button onClick={Aboutus}> About Us </button></p>
                     <p>|</p>
@@ -48,14 +54,34 @@ function Navbar() {
             <button className="bg-white text-black py-2 px-4 rounded-full mt-20">Get Started</button>
         </div>
 
+
+
+        <div className="flex flex-column items-center justify-center bg-black h-screen text-white relative" id="Events">
+        <div className="flex flex-column items-center justify-center">
+            <h1 className="text-4xl text-center text-white absolute top-40 left-100 transform ">EVENTS</h1>  
+        </div>
         
-        <div className="flex h-screen bg-black" id="Aboutus">
-    
-       
-
-
+        
+            
+            
+          
+            
+            
 
         </div>
+
+
+        
+        <div className="flex items-center justify-center h-screen bg-black relative" id="Aboutus">
+            <h1 className="text-4xl text-center text-blue-500 absolute top-40 transform ">ABOUT US</h1>
+        <hr style={{ border: "none", borderTop: "1px solid white", position: "absolute", top: "36%", width: "40%" }} />
+        <div className="flex mt-6">
+            <img src='bulbs.png' width={600} height={600}></img>
+        </div>
+            
+        </div>
+       
+        
 
 
 
